@@ -64,3 +64,77 @@ promise.then((data)=>{
 }).catch((error)=>{
     console.log("OOPS...!",error)
 });
+
+
+//ES6 assignment 04
+
+//1st topic:
+//Global Function
+//isFinite
+console.log(isFinite(null));
+
+//isNaN
+let a = "Saheba"
+let b = 22;
+console.log(isNaN(a));
+console.log(isNaN(b));
+
+//2nd topic:
+//Destructuring Array
+let arr = ['Saheba','Saleha','Saima'];
+let [j,k,l] = arr;
+console.log(k);
+console.log(j);
+console.log(l);
+console.log(j,k,l);
+
+//3rd topic:
+//Destructuring Array with rest operators
+let ar = [6,7,8];
+let [...r] = ar;
+console.log(r);
+
+// 4th topic:
+//Destructuring with Object
+let obj = {
+    myName:'Saheba Kamal',
+    fName:'Ahmed Kamal',
+}
+
+let {myName,fName,nickName='Maliha'} = obj;
+console.log(myName);
+console.log(fName);
+console.log(nickName);
+
+//5th topic:
+// Destructuring Object with rest Operators
+let ob = {
+    mName:'Maliha Kamal',
+    fatherName:'Ahmed Kamal',
+    age:22
+}
+let {...age} = ob;
+console.log(age);
+
+//6th topic:
+//spread operators
+let city = ['Kuala Lumpur','Malaka','Seoul','Busan']
+function cities(u,i,o,p){
+    console.log(u,i,o,p);
+}
+//without spread operators
+cities(city[0],city[1])
+
+//with spread operators
+cities(...city)//here sprad operator will show all array element but without an array..it extracted all element of array and spread them..
+
+cities(city)//it will also show us cities but in an array...
+
+
+
+
+
+
+
+
+
