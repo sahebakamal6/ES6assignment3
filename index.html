@@ -6,10 +6,42 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="generator()">Generator</button>
+
+
+
+    <!-- <script src="./script.js"></script> -->
+        <script type="module" defer>
+        import myFunction,{newFunction} from './script.js'
+        myFunction();
+        newFunction();
+</script>
+<!-- 8th topic:
+Generator -->
+<!-- <script>
+        function* generate(){
+    let number = 10;
+    let number2 = 20;
+    console.log(number + number2);
+    yield 'Addition';
+    console.log(number - number2);
+    yield 'Subtraction';
+    console.log(number * number2);
+    yield 'Multiplication';
+    console.log(number / number2);
+    yield 'Division';
+    return 'all steps have done';
+}
+
+let gen;
+function generator(){
+    if(!gen || gen.next().done){
+        gen = generate();
+    }
+    console.log(gen.next());
     
+}
 
-
-
-    <script src="./script.js"></script>
+</script> -->
 </body>
 </html>

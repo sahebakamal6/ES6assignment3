@@ -130,6 +130,58 @@ cities(...city)//here sprad operator will show all array element but without an 
 
 cities(city)//it will also show us cities but in an array...
 
+//7th topic:
+//Exponentiation Operator
+
+let expo = 2 ** 6;
+console.log(expo);
+
+let nan = 2 **(2**2);
+console.log(nan);
+
+
+function Exponentiation(e,f){
+    return e ** f
+}
+console.log(Exponentiation(4,3));
+console.log(Exponentiation(4,null));
+console.log(Exponentiation(4,NaN));
+
+export default function myFunction(){
+    console.log("Module Practice");
+    
+}
+
+export function newFunction(){
+    console.log("New Function");   
+}
+
+// 8th topic:(Has done in internal js)
+// Generator 
+
+//         function* generate(){
+//     let number = 10;
+//     let number2 = 20;
+//     console.log(number + number2);
+//     yield 'Addition';
+//     console.log(number - number2);
+//     yield 'Subtraction';
+//     console.log(number * number2);
+//     yield 'Multiplication';
+//     console.log(number / number2);
+//     yield 'Division';
+//     return 'all steps have done';
+// }
+
+// let gen;
+// function generator(){
+//     if(!gen || gen.next().done){
+//         gen = generate();
+//     }
+//     console.log(gen.next());
+    
+// }
+
 
 
 
